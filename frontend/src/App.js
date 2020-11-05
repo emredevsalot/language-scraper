@@ -1,7 +1,10 @@
+const { default: HomeScreen } = require('./components/screens/HomeScreen');
+
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <h1>Language Scraper</h1>
+      <HomeScreen />
     </>
   );
 }
