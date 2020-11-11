@@ -10,9 +10,15 @@ const HomeScreen = () => {
       setSentences(data);
     };
     fetchSentences();
-  }, []);
+  }, [sentences]);
 
-  return <>{console.log(sentences)}</>;
+  return (
+    <>
+      {sentences.map((sentence) => (
+        <div key={sentence._id}>{sentence.word}</div>
+      ))}
+    </>
+  );
 };
 
 export default HomeScreen;
