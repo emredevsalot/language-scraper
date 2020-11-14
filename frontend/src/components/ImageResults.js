@@ -5,7 +5,7 @@ const ImageResults = ({ images }) => {
   return (
     <div>
       {images.map((img) => (
-        <img className='img' src={img.largeImageURL} alt='' />
+        <img key={img.id} className='img' src={img.largeImageURL} alt='' />
       ))}
     </div>
   );
